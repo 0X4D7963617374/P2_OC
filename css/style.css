@@ -88,97 +88,99 @@ a
     box-sizing: border-box;
 }
 
-/****** test ***********/
-.Activites
+.header
+{
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo
+{
+    margin-top: 30px;
+}
+
+.Logo img
+{
+    height: 19px;
+}
+
+.Menu
 {
     display: flex;
+}
+
+.Menu a
+{
+    padding: 10px 0;
+    margin: 0 19px;
+    position: relative;
+}
+
+.Menu a:hover
+{
+    color: var(--main-color);
+}
+
+.Menu a:hover::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top: solid 2px var(--main-color);
     width: 100%;
-}
-
-.Activites section
-{
-    background-color: var(--filter_bg_base_color);
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 30px;
-    /*box-sizing: border-box;*/
-}
-
-/****** test2 ***********/
-.Founder_Sec
-{
-    display: flex;
-    width: 100%;
-}
-
-.Founder section
-{
-    background-color: var(--main-bg-color);
-    margin-top: 30px;
 }
 
 .Headline
 {
     width: 100%;
+    margin-top: 30px;
 }
 
 .Search_bar
 {
     margin-top: 30px;
     display: flex;
-    width: 100%;
+    align-items: center;
+    height: 49px;
 }
 
-.Search_bar .Partie_Gauche_Recherche
+.flex-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Search_icon
 {
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
     width: 50px;
-    height: 49px;
 }
 
-.Search_bar .Partie_Gauche_Recherche .fa-stack
+.Search_location
 {
-    display: flex;
-    font-size: 22px;
-    justify-content: center;
-    align-items: center;
-}
-
-.Search_bar .Partie_centre_Recherche
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 195px;
-    height: 49px;
 }
 
-.Search_bar .Partie_Droite_Recherche
+.Search_action
 {
     background-color: var(--main-color);
-    display: flex;
-    border-radius: 0 15px 15px 0px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 0 15px 15px 0;
     width: 132px;
-    height: 49px;
-}
-
-.Search_bar .Partie_Droite_Recherche .card-title
-{
     color: white;
 }
-
-
-
+/*  a optimiser le reste du code  */
 .Fitre_Bar
 {
     margin-top: 30px;
     display: flex;
     gap: 20px;
     box-sizing: border-box;
-    
 }
 
 .Fitre_Bar button
@@ -188,6 +190,7 @@ a
     background-color: white;
     border: 1px solid var(--filter-bg-color);
 }
+
 .Fitre_Bar button:hover
 {
     border-radius: 20px;
@@ -195,13 +198,10 @@ a
     background-color: var(--filter-bg-color);
 }
 
-
 .Fitre_Bar .fa-stack
 {
-  color: var(--main-color);
+    color: var(--main-color);
 }
-
-
 
 .Info_Bar
 {
@@ -354,6 +354,22 @@ a
 
 /****** Activites ***********/
 
+/****** test ***********/
+.Activites
+{
+    display: flex;
+    width: 100%;
+}
+
+.Activites section
+{
+    background-color: var(--filter_bg_base_color);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    /*box-sizing: border-box;*/
+}
+
 .Activites_data
 {
     width: 100%;
@@ -381,6 +397,19 @@ a
 {
     margin-top: 10px;
     margin-bottom: 4px;
+}
+
+/****** test2 ***********/
+.Founder_Sec
+{
+    display: flex;
+    width: 100%;
+}
+
+.Founder section
+{
+    background-color: var(--main-bg-color);
+    margin-top: 30px;
 }
 
 /****** Founder ***********/
