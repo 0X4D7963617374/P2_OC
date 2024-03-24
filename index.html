@@ -32,74 +32,49 @@
                     <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
                 </section>
                 <section class="Search_bar">
-                    <div class="Search_icon flex-center">
+                    <div class="Search_icon flex_center">
                         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     </div>
-                    <div class="Search_location flex-center">
+                    <div class="Search_location flex_center">
                         <h3>Marseille, France</h3>
                     </div>
-                    <a href="#" class="Search_action flex-center">
-                            <h3>Recherche</h3>
+                    <a href="#" class="Search_action flex_center">
+                        <h3>Recherche</h3>
                     </a>
                 </section>
-                
-
-
-<!-- a optimiser le reste du HTML -->
-
-
-                <section class="Fitre_Bar">
-                    <div class="filtre_txt">
-                        <h3  class="card-title">Filtres</h3> 
+                <section class="filtre-bar">
+                    <div class="filtre-titre">
+                        <h3>Filtres</h3>
                     </div>
-                    <div class="economique">
-                        <button>
-                            <i class="fas fa-money-bill-wave fa-stack" aria-hidden="true"></i>
-                            Économique
-                        </button>
-                    </div>
-                    <div class="Familial">
-                        <button >
-                            <i class="fas fa-child fa-stack" aria-hidden="true"></i>
-                            Familial
-                        </button>
-                    </div>
-                    <div class="Romantique">
-                        <button>
-                            <i class="fas fa-heart fa-stack" aria-hidden="true"></i>
-                            Romantique
-                        </button>
-                    </div>
-                    <div class="Nos_Pepites">
-                        <button >
-                            <i class="fa-solid fa-fire fa-stack" aria-hidden="true"></i>
-                            Nos pépites
-                        </button>
-                    </div>
-
+                    <button class="filtre-option" data-category="economique">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Économique</h3>
+                    </button>
+                    <button class="filtre-option" data-category="familial">
+                        <i class="fas fa-child"></i>
+                        <h3>Familial</h3>
+                    </button>
+                    <button class="filtre-option" data-category="romantique">
+                        <i class="fas fa-heart"></i>
+                        <h3>Romantique</h3>
+                    </button>
+                    <button class="filtre-option" data-category="nos-pepites">
+                        <i class="fa-solid fa-fire"></i>
+                        <h3>Nos pépites</h3>
+                    </button>
                 </section>
-
-
-
-
-
-
                 <section class="Info_Bar">
-                   <span class="fa-stack fa-2x" style="flex-shrink: 0;">
-                        <i class="far fa-circle fa-stack-2x" aria-hidden="true"></i>
-                        <i  class="fa-solid fa fa-info" aria-hidden="true"></i>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-info fa-stack-1x"></i>
                     </span>
-                    <p class="card-subtitle">Plus de 500 logements sont disponibles dans cette ville</p>                    
-                    
+                    <p class="card-subtitle">Plus de 500 logements sont disponibles dans cette ville</p>
                 </section>
-
             </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-                    <div class="populaires-title_H">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
-                    </div>
-                    <div class="hebergements-cards">
+                <section class="hebergements  espace-vertical">
+                    <h2 class="section-title ">Hébergements à Marseille</h2>
+                    <div class="hebergements-cards espace-vertical">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
@@ -161,7 +136,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="hebergements-cards">
+                    <div class="hebergements-cards espace-vertical">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg"
@@ -223,11 +198,19 @@
                             </article>
                         </a>
                     </div>
-                    <div class="populaires-title_B">
-                        <h1 class="section-title_B">Afficher plus</h1>
-                    </div>
+                    <h1 class="section-title_B espace-vertical">Afficher plus</h1>
                 </section>
-                <section class="populaires">
+
+
+
+
+                <!-- a optimiser le reste du HTML -->
+
+
+
+
+                
+                <section class="populaires  espace-vertical">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -351,45 +334,45 @@
                 </section>
             </div>
 
-          
+
         </main>
         <footer>
             <div class="Founder">
                 <section class="Founder_Sec">
-                        <div class="Colone">
-                            <a href="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">À propos</h3>
-                                        <p class="card-subtitle">Fonctionnement du site</p>
-                                        <p class="card-subtitle">Condition générales</p>
-                                        <p class="card-subtitle">Données et confidentialité</p>
-                                    </div>
+                    <div class="Colone">
+                        <a href="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">À propos</h3>
+                                    <p class="card-subtitle">Fonctionnement du site</p>
+                                    <p class="card-subtitle">Condition générales</p>
+                                    <p class="card-subtitle">Données et confidentialité</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="Colone">
-                            <a href="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Nos hebergements</h3>
-                                        <p class="card-subtitle">Charte qualité</p>
-                                        <p class="card-subtitle">Proposer votre hôtel</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Colone">
+                        <a href="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Nos hebergements</h3>
+                                    <p class="card-subtitle">Charte qualité</p>
+                                    <p class="card-subtitle">Proposer votre hôtel</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="Colone">
-                            <a href="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Assistance</h3>
-                                        <p class="card-subtitle">Centre d'aide</p>
-                                        <p class="card-subtitle">Nous contacter</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Colone">
+                        <a href="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Assistance</h3>
+                                    <p class="card-subtitle">Centre d'aide</p>
+                                    <p class="card-subtitle">Nous contacter</p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                    </div>
                 </section>
             </div>
 
